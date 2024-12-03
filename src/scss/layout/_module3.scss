@@ -26,6 +26,9 @@
         &_section {
             margin-top: 15px;
             margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             &_img {
                 width: 130px;
                 height: 130px;
@@ -51,5 +54,23 @@
         text-align: center;
         border-radius: 22.5px;
         padding: 10px 25px 10px 25px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .module3 {
+        &_h2{
+            font-size: 28px;
+        }
+        &_grid {
+            width: 100%;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;    
+            &_section {
+                &_h3 {
+                    font-size: 18px;
+                }
+            }
+        }
     }
 }

@@ -13,7 +13,7 @@
         font-size: 22px;
         padding-bottom: 20px;
     }
-    &_p {
+    &_text {
         font-family: $font-main;
         color: $color-grey;
         font-size: 18px;
@@ -29,5 +29,23 @@
         border: 2.5px solid $color-green;
         border-radius: 22.5px;
         padding: 10px 35px 10px 35px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .module2 {
+        padding: 40px 15px 75px 40px;
+        &_h3 {
+            font-size: 16px;
+        }
+        &_h2 {
+            font-size: 32px;
+            padding-bottom: 20px;
+        }
+        &_text {
+            font-size: 20px;
+            line-height: 30px;
+            padding-bottom: 45px;
+        }
     }
 }
