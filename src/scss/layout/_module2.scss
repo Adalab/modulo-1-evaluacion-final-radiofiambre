@@ -22,10 +22,11 @@
     }
     &_button {
         font-family: $font-main;
+        font-weight: 500;
         color: $color-green;
         font-size: 20px;
         text-align: center;
-        border: 2px solid $color-green;
+        border: 2.5px solid $color-green;
         border-radius: 22.5px;
         padding: 10px 35px 10px 35px;
     }
