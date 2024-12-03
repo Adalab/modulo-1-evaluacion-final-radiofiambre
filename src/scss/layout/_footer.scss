@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px; 
     &_button {
         background-color: white;
         width: 38px;
@@ -20,25 +19,31 @@
             width: 50%;
         }
     }
-    &_list {
-        font-size: 16px;
-        line-height: 30px;
-        text-align: center;
-        &_link {
-            text-decoration: none;
-            color: white;
+}
+
+.grid {
+    &_listcontainer {
+        &_list {
+            font-size: 16px;
+            line-height: 30px;
+            text-align: center;
+            padding: 10px 0px 10px 0px;
+            .link {
+                text-decoration: none;
+                color: white;
+            }
         }
     }
     &_info {
         text-align: center;
         font-size: 14px;
-        &_copy {
-            padding: 5px 0px 10px 0px;
+        .copy {
+            padding: 20px 0px 15px 0px;
         }
         .heart {
             color: $color-green;
         }
-    }
+    }   
 }
 
 @media screen and (min-width: 768px) {
