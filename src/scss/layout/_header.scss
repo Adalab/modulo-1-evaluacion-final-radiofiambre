@@ -2,6 +2,8 @@
   background-color: $color-green;
   width: 37px;
   height: 37px;
+  position: absolute;
+    top: 0;
   &_box {
     height: 100%;
     display: flex;
