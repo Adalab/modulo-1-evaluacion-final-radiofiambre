@@ -1,5 +1,4 @@
 .module1 {
-    background-color: aqua;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -8,7 +7,7 @@
     background-position: 85%;
     background-repeat: no-repeat;
     background-size: cover;
-    &_h1{
+    &_h1 {
         font-family: $font-slab;
         color: white;
         font-size: 30px;
@@ -17,7 +16,7 @@
         text-align: center;
         padding-top: 255px;
     }
-    &_p{
+    &_p {
         font-family: $font-main;
         color: white;
         font-size: 16px;
