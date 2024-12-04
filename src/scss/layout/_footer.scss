@@ -51,13 +51,6 @@
 
 @media screen and (min-width: 768px) {
     .footer {
-        // background-color: $color-grey;
-        // font-family: $font-main;
-        // color: white;
-        // padding-bottom: 30px;
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
         &_button {
             width: 45px;
             height: 45px;
@@ -72,6 +65,23 @@
             flex-direction: row;
             align-items: normal;
             gap: 100px;
+            &_list {
+                text-align: left;
+            }
+        }
+        &_info {
+            text-align: left;
+        }   
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footercontent {
+        gap: 300px;
+        &_listcontainer {
+            flex-direction: row;
+            align-items: normal;
+            gap: 250px;
             &_list {
                 text-align: left;
             }
