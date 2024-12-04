@@ -1,125 +1,43 @@
 ![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
 
-# Adalab web starter kit
+# we ❤︎ run
+**Ejercicio de evaluación del Módulo 1**
+*Patricia Parreira (@radiofiambre)*
 
-Ahoy! Este es nuestro Starter Kit creado en **node y vite**. ¿Y qué es un Starter kit? Pues es una **plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas**.
 
-Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
+Este es el ejercicio de la evaluación del Módulo 1 del bootcamp de Web Development de la escuela Adalab, promoción Brenda Milner (nov 2024 - mar 2025).
 
-En el Kit hay 3 tipos de ficheros y carpetas:
+### Proceso
 
-- Los ficheros que están sueltos en la raíz del repositorio, como vite.config.js, package.json... Son la configuración del proyecto y no necesitamos modificarlos (excepto este README.md, para describir tu proyecto).
-- La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
-- La carpeta `public/`, que tiene fichero estáticos como imágenes, fuentes, favicon, librerías de JavaScript antiguas (jQuery, ...)
-- Y la carpeta `docs/`, que es generada automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de `src/` y `public/`, los procesa y los genera dentro de `public/` y `docs/`.
+La página resultante se ha desarrollado siguiendo las pautas indicadas a continuación:
 
-## Guía de inicio rápido
+**1. Análisis y preparación del proyecto:**
+   - Lectura de las especificaciones pautadas por la escuela.
+   - Visualización conjunta de los mock-ups de Zeplin (tres versiones: *mobile*, *tablet* y *desktop*).
+   - Plantamiento visual de la estructura HTML, considerando los puntos en común y las variaciones entre los tres dispositivos.
 
-> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) con una versión superior a la 14 para trabajar con este Starter Kit:
+**2. Preparación del espacio de trabajo:**
+   - Clonado del repositorio de GitHub Classroom.
+   - Instalación del Adalab Web Starter Kit.
+   - Limpieza de archivos y carpetas.
+   - Actualización de ficheros (vite.config.js).
+   - Inclusión en `public/images` de los archivos proporcionados para el proyecto (imágenes e iconos).
 
-### Pasos a seguir cada vez que queremos arrancar un proyecto desde cero:
+**3. Desarrollo del código**
+   - Estructuración del HTML. Se ha creado un index y cinco partials, equivalentes a la estructura de la home (*header, module 1, module 2, module 3, footer*).
+   - Diseño de estilo *mobile-first*, añadiendo partials "espejo" del HTML.
+   - Realización de adaptaciones específicas para *tablet* (a partir de 768px).
+   - Realización de adaptaciones específicas para *desktop* (a partir de 1280px).
 
-1. **Crea tu propio repositorio.**
-1. Descarga este **Starter kit desde GitHub**.
-   - No recomendamos que clones este repo ya que no podrás añadir commits.
-1. **Copia todos los ficheros** de este Starter kit en la carpeta raíz de tu repositorio.
-   - Recuerda que debes copiar **también los ficheros ocultos** que comienzan por un punto.
-   - Si has decidido clonar este repo, no debes copiar la carpeta `.git`. Si lo haces estarás machacando tu propio repositorio.
-1. **Abre una terminal** en la carpeta raíz de tu repositorio.
-1. **Instala las dependencias** locales ejecutando en la terminal el comando:
 
-```bash
-npm install
-```
+### Características y aspectos del código
+- Para la estrucura se han empleado: Sass, partials, media queries, variables, hoja de reset, anidaciones.
+- Para el código: flexbox, grid, position, box-shadow, anclas, enlaces externos, varias propiedades de background, vh, transform, transition, animation.
+- No se han utilizado selectores de etiqueta ni de id.
+- Se han definido los selectores de clase en inglés.
+- Desarrollo del README.md.
 
-### Pasos para arrancar el proyecto:
 
-Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. **El proyecto hay que arrancarlo cada vez que te pongas a programar.** Para ello ejecuta el comando:
-
-```bash
-npm run dev
-```
-
-Este comando:
-
-- **Abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
-- También **observa** todos los ficheros que hay dentro de la carpeta `src/`, para que cada vez que modifiques un fichero **refresca tu página en Chrome**.
-- También **procesa los ficheros** HTML, SASS / CSS y JS. Por ejemplo:
-   - Convierte los ficheros SASS en CSS.
-   - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
-
-Después de ejecutar `npm run dev` ya puedes empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
-
-### Pasos para publicar el proyecto en GitHub Pages:
-
-Para generar tu página para producción ejecuta el comando:
-
-```bash
-npm run build
-```
-
-Y a continuación:
-
-1. Sube a tu repo la carpeta `docs/` que se te acaba de generar.
-1. Entra en la pestaña `settings` de tu repo.
-1. Y en el apartado de GitHub Pages activa la opción **master branch /docs folder**.
-1. Y ya estaría!!!
-
-Además, los comandos:
-
-```bash
-npm run push-docs
-```
-o
-
-```bash
-npm run deploy
-```
-
-son un atajo que nos genera la versión de producción y hace push de la carpeta `docs/` del tirón. Te recomendamos ver el fichero `package.json` para aprender cómo funciona.
-<!--
-## Flujo de archivos con Gulp
-
-Estas tareas de Gulp producen el siguiente flujo de archivos:
-
-![Gulp flow](./gulp-flow.png)
-
-## `gulpfile.js` y `config.json`
-
-Nuestro **gulpfile.js** usa el fichero `config.json` de configuración con las rutas de los archivos a generar / observar.
-
-De esta manera separarmos las acciones que están en `gulpfile.js` de la configuración de las acciones que están en `config.json`.
--->
-## Estructura de carpetas
-
-La estructura de carpetas tiene esta pinta:
-
-```
-src
- ├─ api // los ficheros de esta carpeta se copian en public/api/
- |  └─ data.json
- ├─ images
- |  └─ logo.jpg
- ├─ js // los ficheros de esta carpeta se concatenan en el fichero main.js y este se guarda en public/main.js
- |  ├─ main.js
- |  └─ events.js
- ├─ scss
- |  ├─ components
- |  ├─ core
- |  ├─ layout
- |  └─ pages
- └─ html
-    └─ partials
-```
-
-> **NOTA:** Los partials de HTML y SASS del proyecto son orientativos. Te recomendamos usar los que quieras, y borrar los que no uses.
-<!--
-## Vídeotutoriales del Starter kit
-
-- [Qué es, trabajar con la versión de desarrollo y rutas relativas](https://www.youtube.com/watch?v=XwvhXvBijos)
-- [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
-- [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
--->
-## Falta algo?
-
-Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de las issues o si te animas a mejorarlo mándanos un PR :)
+### Consdieraciones
+- Se han respetado las medidas y el resto de indicaciones de Zeplin en la medida de lo posible, priorizando siempre la semejanza visual.
+- Se han hecho pruebas para verificar el responsive en las tres medidas de pantalla, así como que se adapta correctamente en las medidas intermedias. 

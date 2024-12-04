@@ -12,6 +12,7 @@
         height: 38px;
         border-radius: 50%;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+        animation: move-up 1s ease-in-out;
         transform: translateY(-19px);
         display: flex;
         justify-content: center;
@@ -48,6 +49,18 @@
         }
     }   
 }
+
+@keyframes move-up {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-19px);
+    }
+}
+
+
+
 
 @media screen and (min-width: 768px) {
     .footer {
